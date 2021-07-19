@@ -1,0 +1,52 @@
+<head>
+    <link href='css/style.css' rel="stylesheet">
+
+    <script>
+        function submit() {
+            document.getElementById("register").submit();
+        }
+    </script>
+
+</head>
+
+<body class="form-body">
+    <div class="form-main">
+        <div class="inner-form">
+            <div class="img-div">
+                <img src="/cameo.png">
+            </div>
+            <h1 class="form-main-h1">Register</h1>
+            <div>
+                <%if(!errors) var errors='null' %>
+                    <%if(!message) { var message='null' } else {%>
+                        <div class="error">
+                            <%=message%>
+                        </div>
+
+                        <%}%>
+                            <%-include ('partials/error',{errors:errors,message})%>
+            </div>
+            <form id="register" action="/register" method="POST">
+                <div class="input-div">
+                    <label for="name">Name</label>
+                    <input type="name" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="input-div">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="input-div">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                <a class="form-main-a button" href="#" onclick="submit()">Register</a>
+                <!-- <button type="Submit">Register</button> -->
+                <div>If you are a registered user, <a href="/login">Login</a></div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+</body>

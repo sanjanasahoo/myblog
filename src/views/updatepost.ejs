@@ -1,0 +1,27 @@
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+    <script>
+        function submit() {
+            document.getElementById("updatepost").submit();
+        }
+    </script>
+</head>
+
+<h1>Update Post</h1>
+<div class="postform">
+    <form id="updatepost" action="/post/<%=data.id%>?_method=PUT" method="POST">
+        <%let title=String(data.title)[0].toUpperCase()+String(data.title).slice(1)%>
+            <div class="form-input-div">
+                <label for="updatepost-title">Title</label>
+                <input type="text" id='updatepost-title' name="title" value='<%=title%>' required>
+            </div>
+            <div class=" text-div">
+                <label for="updatepost-content">Content</label>
+                <textarea id='updatepost-content' name="content" rows='4' cols='10'
+                    required><%=data.content%></textarea>
+            </div>
+            <a class="inline-button" href="#" onclick="submit()">Update</a>
+</div>
+
+</form>
+</div>

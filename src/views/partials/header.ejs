@@ -1,0 +1,27 @@
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<div class="banner">
+    <div class="img-div">
+        <img src="/cameo.png">
+    </div>
+    <div class="blog-title">Cameo Blog</div>
+</div>
+<div class="header">
+    <div class="welcome">
+        <%if(user && user.name){%>
+            Hello <%=String(user.name)[0].toUpperCase()+String(user.name).slice(1)%>
+                <%}%>
+    </div>
+    <nav>
+        <ul>
+            <li><a href='/'>HOME </a></li>
+            <%if(!user || !user.name){%>
+                <li><a href='/login'>LOGIN </a></li>
+                <li><a href='/register'>REGISTER </a></li>
+                <%}else{%>
+                    <li><a href='/logout'>LOGOUT </a></li>
+                    <%}%>
+        </ul>
+    </nav>
+</div>

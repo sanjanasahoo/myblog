@@ -1,0 +1,40 @@
+{
+  level: 'error',
+  message: 'Error: Failed to lookup view "homel" in views directory "/home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views"',
+  timestamp: '2021-07-18T04:00:34.397Z'
+}
+{
+  level: 'error',
+  message: 'TypeError: /home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views/details.ejs:19\n' +
+    '    17|             <div>\n' +
+    '    18|                 <span>\n' +
+    ' >> 19|                     <%=post.author.name%> |\n' +
+    '    20|                 </span>\n' +
+    '    21|                 <span>\n' +
+    '    22|                     <%=post.createdAt.toDateString() %>\n' +
+    '\n' +
+    "Cannot read property 'name' of undefined",
+  timestamp: '2021-07-19T06:25:46.278Z'
+}
+{
+  level: 'error',
+  message: 'TypeError: /home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views/details.ejs:19\n' +
+    '    17|             <div>\n' +
+    '    18|                 <span>\n' +
+    ' >> 19|                     <%=post.author.name%> |\n' +
+    '    20|                 </span>\n' +
+    '    21|                 <span>\n' +
+    '    22|                     <%=post.createdAt.toDateString() %>\n' +
+    '\n' +
+    "Cannot read property 'name' of undefined",
+  timestamp: '2021-07-19T06:25:55.322Z'
+}
+{
+  level: 'error',
+  message: 'Error: \n' +
+    'Invalid `prisma.user.findUnique()` invocation:\n' +
+    '\n' +
+    '\n' +
+    '  other side closed',
+  timestamp: '2021-07-19T14:28:21.814Z'
+}

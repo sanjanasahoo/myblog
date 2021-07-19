@@ -1,0 +1,56 @@
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+    <script>
+        function submit() {
+            document.getElementById("delete").submit();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="blog-main">
+        <% if(posts.length==0){%>
+            <h2>No posts found</h2>
+            <%}%>
+                <% posts.forEach(function(post){ %>
+                    <div class="card">
+                        <div class="box">
+                            <div class="img-div">
+                                <img src="/uploads/<%=post.filename%>" class="blog-image">
+                            </div>
+                            <div class="details">
+                                <div>
+
+                                    <a class="card-title" href='/post/<%=post.id%>'>
+                                        <%=String(post.title)[0].toUpperCase()+String(post.title).slice(1)%>
+                                    </a>
+                                </div>
+                                <p class="author">
+                                    <%=String(post.author.name)[0].toUpperCase()+String(post.author.name).slice(1)%>
+                                </p>
+                                <p>
+                                    <%=post.createdAt.toDateString() %>
+                                </p>
+
+                            </div>
+
+                            <%if(user.name){%>
+                                <div class=post-button>
+                                    
+                                    <div><a class="inline-button" href="post/update/<%=post.id%>">Update</a></div>
+                                    <div>
+                                    <form method="POST" action="/post/<%=post.id%>?_method=DELETE" id="delete">
+                                        <a class="inline-button" href="#" onclick="submit()">Delete</a>
+                                    </form>
+                                </div>
+                                </div>
+                                <%}%>
+
+
+                        </div>
+                    </div>
+
+                    <%});%>
+    </div>
+</body>

@@ -1,0 +1,202 @@
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T02:23:04.876Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T03:54:55.749Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T03:56:38.719Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T03:57:10.206Z'
+}
+{
+  view: View {
+    defaultEngine: 'ejs',
+    ext: '.ejs',
+    name: 'homel',
+    root: '/home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views',
+    engine: [Function (anonymous)],
+    path: undefined
+  },
+  level: 'error',
+  timestamp: '2021-07-18T03:57:13.892Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T03:58:50.406Z'
+}
+{
+  level: 'error',
+  message: 'Error: Failed to lookup view "homel" in views directory "/home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views"',
+  timestamp: '2021-07-18T03:58:55.360Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T04:00:29.665Z'
+}
+{
+  level: 'error',
+  message: 'Error: Failed to lookup view "homel" in views directory "/home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views"',
+  timestamp: '2021-07-18T04:00:34.396Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-18T16:11:51.239Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T02:36:38.683Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T04:44:44.743Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T04:45:03.366Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T04:52:17.635Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T05:48:43.388Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:19:03.599Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:19:30.599Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:21:03.655Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:22:28.039Z'
+}
+{
+  level: 'error',
+  message: 'TypeError: /home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views/details.ejs:19\n' +
+    '    17|             <div>\n' +
+    '    18|                 <span>\n' +
+    ' >> 19|                     <%=post.author.name%> |\n' +
+    '    20|                 </span>\n' +
+    '    21|                 <span>\n' +
+    '    22|                     <%=post.createdAt.toDateString() %>\n' +
+    '\n' +
+    "Cannot read property 'name' of undefined",
+  timestamp: '2021-07-19T06:25:46.277Z'
+}
+{
+  level: 'error',
+  message: 'TypeError: /home/user/mountblue/projects/mbc-js-16-1-blog-sanjanasahoo/src/views/details.ejs:19\n' +
+    '    17|             <div>\n' +
+    '    18|                 <span>\n' +
+    ' >> 19|                     <%=post.author.name%> |\n' +
+    '    20|                 </span>\n' +
+    '    21|                 <span>\n' +
+    '    22|                     <%=post.createdAt.toDateString() %>\n' +
+    '\n' +
+    "Cannot read property 'name' of undefined",
+  timestamp: '2021-07-19T06:25:55.321Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:30:22.671Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T06:43:57.477Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T11:57:00.598Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:13:01.132Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:13:27.556Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:16:38.505Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:19:34.028Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:19:57.606Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:20:32.530Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:21:52.693Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:23:37.780Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:24:47.039Z'
+}
+{
+  level: 'info',
+  message: 'Listening to port 5000',
+  timestamp: '2021-07-19T14:25:44.757Z'
+}
+{
+  level: 'error',
+  message: 'Error: \n' +
+    'Invalid `prisma.user.findUnique()` invocation:\n' +
+    '\n' +
+    '\n' +
+    '  other side closed',
+  timestamp: '2021-07-19T14:28:21.813Z'
+}

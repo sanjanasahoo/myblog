@@ -1,0 +1,42 @@
+<head>
+    <link href='css/style.css' rel="stylesheet">
+    <script>
+        function submit() {
+            document.getElementById("login").submit();
+        }
+    </script>
+
+</head>
+
+<body class="form-body">
+    <div class="form-main">
+        <div class="inner-form">
+            <div class="img-div">
+                <img src="/cameo.png">
+            </div>
+            <h1 class="form-main-h1">Sign in</h1>
+            <div class="error">
+                <%if(messages&&messages.error){%>
+                    <%=messages.error %>
+                        <%}%>
+            </div>
+
+            <form action="/login" method="POST" id="login">
+                <div class="input-div">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="input-div">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                <a class="form-main-a button" href="#" onclick="submit()">Login</a>
+                <!-- <button type="Submit">Login</button> -->
+                <div>If not registered, please <a href="/register">Register</div>
+
+            </form>
+        </div>
+
+
+</body>
+</div>

@@ -1,0 +1,36 @@
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <%-include ('partials/header',{user:user})%>
+    </div>
+    <div class="details">
+        <h1>
+            <%=String(post.title)[0].toUpperCase()+String(post.title).slice(1)%>
+        </h1>
+        <div class="details-box">
+            <div class="img-div">
+                <img src="/uploads/<%=post.filename%>" class="blog-image">
+            </div>
+            <div class="post-details">
+                <span>
+                    <%=post.author.name%> |
+                </span>
+                <span>
+                    <%=post.createdAt.toDateString() %>
+                </span>
+            </div>
+            <div class="details-content">
+                <div style="width: 800px;">
+                    <%-post.content%>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+    </script>
+</body>

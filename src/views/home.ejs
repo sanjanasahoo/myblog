@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Blog !!</title>
+    <link href='css/style.css' rel="stylesheet">
+    <link href='css/reset.css' rel="stylesheet">
+    <link rel="icon" href="cameo.png" type="image/x-icon">
+    <script>
+        function submitSearch() {
+
+            document.getElementById('search-form').submit();
+        }
+        function submitSort() {
+
+            document.getElementById('sort-form').submit();
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <%if(typeof(user)!='undefined' && user){%>
+                <%}else{%>
+                    <% var user='null' ;%>
+                        <%}%>
+
+                            <%-include ('partials/header',{user:user})%>
+        </div>
+        <div class="error">
+            <%if(typeof(message)!='undefined'&&message.length>0){%>
+                <%=message%>
+                    <%}%>
+        </div>
+        <%if(typeof(user)!='undefined' && user.name){%>
+            <div class="button-div">
+                <a class="button add-button" href="/add/<%=user.id%>">Add Post</a>
+            </div>
+            <%}%>
+                <div class="search">
+                    
+                    <form id="search-form" class="search-form" action="" method="GET">
+                        <div class="search-box">
+                            <select name="authorFilter" id='authorFilter'>
+                                <option id="author">
+                                </option>
+                            </select>
+                            <input name="keywordSearch" id='keywordSearch' placeholder="Search by keyword">
+
+                            <select name="sort" id='sort'>
+                                <option value="new" selected>Newest</option>
+                                <option value="old">Oldest</option>
+                            </select>
+                            <a class="inline-button" href="#" onclick="submitSearch()">Search</a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="inner">
+
+                    <%-include ('partials/card',{user:user,posts:posts})%>
+                </div>
+
+    </div>
+    <div class="footer">
+        <%-include ('partials/footer')%>
+    </div>
+    <script>
+        let authors = '<%-authors%>'.split(',')
+        const element = document.getElementById("authorFilter")
+        element.innerHTML =
+            '<option disabled selected value>select author</option>' +
+            authors.reduce((tmp, x) => `${tmp}<option >${x}</option>`, '');
+
+    </script>
+    <script>
+        let author = '<%-author%>'
+        let keyword = '<%-keyword%>'
+        let sortby = '<%-sortby%>'
+        if (author !== 'undefined') {
+            const element = document.getElementById("authorFilter")
+            element.value = author
+        }
+        if (keyword !== 'undefined') {
+            const element = document.getElementById("keywordSearch")
+            element.value = keyword
+        }
+        const sortElement = document.getElementById("sort")
+        sortElement.value = sortby
+
+
+    </script>
+
+
+
+</body>
+
+</html>

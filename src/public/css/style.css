@@ -1,0 +1,341 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+}
+.header ul *{
+    display: inline;
+}
+.header li {
+    margin: 20px;
+    font-size :larger
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #58C5C2;
+    height: 100px;
+
+}
+nav{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    position: relative;
+}
+img{
+    width: 30px;
+}
+.header a{
+    text-decoration: none;
+}
+body{
+    font-family: monospace;
+    margin: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+/* .main{
+    height: 100%;
+} */
+.blog-title{
+    align-self: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.welcome{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    align-self: center;
+}
+.footer{
+   padding-top: 20px;
+}
+/* ==============================Search div styling============================================== */
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: blue;
+    padding: 20px;
+}
+select {
+   
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1em 1em 0 0;
+    margin: 0;
+    width: 90px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+#authorFilter,#keywordSearch,#sort{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.search-form{
+    width: 50%;
+}
+.search-box{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+select{
+    color:darkslategrey;
+    }
+    option{
+    color:black;
+    }
+option:disabled {
+    color: red;
+  }
+/* ==============================Login/Register form Styling======================================== */
+.form-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+}
+.form-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inner-form{
+    padding: 10px;
+}
+.form-input {
+    width:100%;
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.form-main-h1,.form-main-a{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+.form-main-p{
+    display: flex;
+    justify-content: center;
+}
+.input-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 40%;
+   
+}
+/* ===================================Styling buttons========================================== */
+.button,.inline-button {
+    text-decoration: none;
+    padding: 15px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: black;
+}
+.button{
+    width: 37%;
+    background-color: black;
+    color: white;
+}
+.add-button{
+    width: auto;
+}
+.button-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.inline-button{
+    padding: 10px;
+}
+.post-button {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+#delete {
+    display: block;
+}
+/*================================= postform Styling ==========================================*/
+
+#addpost-title,#updatepost-title,label [for="addpost-title"]{
+    font-weight: bold;
+     
+ }
+ #addpost-content,#updatepost-content{
+     width: 60%;
+     height: 100%;
+ }
+ 
+ .postform{
+     background-color: #58C5C2;
+ }
+ 
+ textarea,input[type=text]{
+     width: 60%;
+     padding: 20px;
+     border: 2px solid black;
+     border-radius: 10px;
+ 
+ }
+ 
+ .form-input-div{
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+ 
+ }
+ .text-div{
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     height:70%
+ }
+ .form-button-div{
+     padding: 10px;
+ }
+ /* ====================================blog card styling==================================== */
+ .card-title{
+    text-decoration: solid;
+    color: brown;;
+    font-weight: bold;    
+    display: block;
+    font-size: large;
+    font-family: monospace;
+    padding-bottom: 10px;
+}
+.box {
+    border: 1px solid burlywood;
+    /* width: 90%; */
+    padding: 0px 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+
+.post-title{
+    display: inline;
+    margin-left: -10px;
+}
+.blog-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left:auto ;
+    margin-right: auto; 
+}
+.card{
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    
+}
+/* .img-div{
+    
+} */
+.blog-image{
+   border-radius: 10px;
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   background: rgba(50, 50, 50, 0.5);
+}
+.details{
+    padding: 20px;
+    padding-left: 5px;
+}
+.details-box .img-div{
+    border:1px transparent;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.details-box .blog-image {
+    width: 800px;
+    height: 100%;
+}
+.details h1{
+    text-align: center;
+}
+.details-content{
+    align-self: center;
+    padding: 20px;
+}
+.details,.details-box,.details-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.author{
+    display: block;
+    padding: 10px;
+    padding-left: 0px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #58C5C2;
+}
+.post-details{
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+/*======================= error messages==================================== */
+
+.error{
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+/* =================Media Queries ==================================*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .welcome{
+          font-size: large;
+      }
+     nav{
+         width: 65%;
+     }
+     .search-box{
+        flex-wrap: wrap;
+        height: 100%;
+     }
+}

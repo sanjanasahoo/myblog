@@ -1,0 +1,29 @@
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+    <script>
+        function submit() {
+            document.getElementById("addpost").submit();
+        }
+
+    </script>
+</head>
+<h1>New Post</h1>
+
+<div class="postform">
+    <form id="addpost" action="" method="POST" enctype="multipart/form-data">
+        <div><input type="file" name="file"></div>
+        <div class="form-input-div">
+            <label for="addpost-title">Title</label>
+            <input type="text" id='addpost-title' name="title" required>
+        </div>
+        <div class=" text-div">
+            <label for="addpost-content">Content</label>
+            <textarea id='addpost-content' name="content" required></textarea>
+        </div>
+        <div class="form-button-div">
+            <a class="inline-button" href="#" onclick="submit()">Save</a>
+
+        </div>
+
+    </form>
+</div>
